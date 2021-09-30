@@ -145,17 +145,4 @@ public class UserController {
 		return new ResponseEntity<List<Room>>(allAvailableRooms, HttpStatus.OK);
 	}
 
-	static void getMinMax(long a[], long n) {
-		long min = Long.MAX_VALUE, max = Integer.MIN_VALUE;
-
-		for (long val : a) {
-			if (val < min) {
-				min = val;
-			}
-
-			if (val > max) {
-				max = val;
-			}
-		}
-	}
 }
